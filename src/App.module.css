@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+.calc-display {
+  width: 300px;
+  height: 70px;
+  border-radius: 5px;
+  background: white;
+  color: #000;
+  justify-content: end;
+  align-items: center;
+  display: flex;
+  font-size: 35px;
+  padding-right: 20px;
+  margin-bottom: 0;
+}
+
+.res-display {
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  background: white;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+/* Только эти два правила для C и = */
+.numbers button:nth-last-child(2) {
+  /* C */
+  grid-column: 1 / 4;
+}
+
+.numbers button:last-child {
+  /* = */
+  grid-column: 1 / 4;
+}
+
+.calc-display-fixed {
+  color: red;
+}
